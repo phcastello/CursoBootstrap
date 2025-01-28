@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Layout 2 Grid</title>
+    <style>
+        .h100{
+            height: 100px;
+        }
+
+        .h400{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Layout 2 Grid Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-dark bg-opacity-50 h100 text-center"><h2>O título aqui!</h2></div>
+            <div class="col-12 col-md-3 bg-dark bg-opacity-75 h400 text-center"><h2>Nav bar/Menu</h2></div>
+            <div class="col-12 col-md-9 bg-dark bg-opacity-25 h400 text-center"><h2>Conteudo principal</h2></div>
+            <div class="col-12 bg-dark bg-opacity-50 h100 text-center"><h2>Footer</h2></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+            </div>
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap Js-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
