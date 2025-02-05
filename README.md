@@ -33,7 +33,7 @@
   .links-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre os itens */
+    gap: 3px; /* Espaçamento entre os itens */
   }
 
   .links-container h3 {
