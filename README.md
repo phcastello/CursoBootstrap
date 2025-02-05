@@ -33,18 +33,23 @@
   .links-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px; /* Espaçamento entre os itens */
+    gap: 0px;
   }
 
   .links-container h3 {
-    flex: 1 1 45%; /* Faz com que cada item ocupe cerca de 45% da largura */
-    text-align: left; /* Alinhamento do texto */
+    flex: 1 1 45%;
+    text-align: left;
   }
 
-  /* Ajuste para telas menores */
+  h3 > a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  
   @media (max-width: 600px) {
     .links-container h3 {
-      flex: 1 1 100%; /* Em telas pequenas, cada link ocupa a linha inteira */
+      flex: 1 1 100%;
     }
   }
 </style>
