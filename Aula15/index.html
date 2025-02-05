@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <title>Fontes bootstrap</title>
+    <style>
+        #p-truncado {
+            transition: max-height 0.5s ease-in-out;
+            overflow: hidden;
+            max-height: 3rem; /* Ajuste conforme necessário */
+        }
+        #p-truncado:not(.text-truncate) {
+            max-height: 100rem; /* Ajuste conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <div class="container fs-3">
+        <p class="fw-bold">Negrito</p>
+        <p class="fw-semibold">Semi-negrito</p>
+        <p class="fw-normal">Normal</p>
+        <p class="fw-light">Leve</p>
+        <p class="fst-italic">Itálico</p>
+        <p class="fst-normal">Normal</p>
+        <hr>
+        <p class="lh-lg font-monospace text-muted text-truncate" id="p-truncado">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae, possimus alias reprehenderit delectus enim, nulla perspiciatis praesentium modi nisi corporis esse odio pariatur inventore eius assumenda officia! Omnis, quia?
+            <a href="#" class="text-reset text-decoration-none">Link Qualquer</a>
+        </p>
+        <input type="button" value="Expandir" class="btn btn-primary" id="text">
+    </div>
+    <script>
+        let botao = document.getElementById('text')
+        botao.addEventListener('click', toggleTruncate);
+        function toggleTruncate() {
+            document.getElementById('p-truncado').classList.toggle('text-truncate');
+            if(document.getElementById('p-truncado').classList.contains('text-truncate')){
+                botao.value = 'Expandir';
+            }
+            else{
+                botao.value = 'Contrair';
+            }
+        }
+    </script>
+</body>
+</html>
