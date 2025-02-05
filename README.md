@@ -41,7 +41,7 @@
     text-align: left;
   }
 
-  h3#link{
+  h3.link{
     margin-top: 5px;
     margin-bottom: 5px;
   }
