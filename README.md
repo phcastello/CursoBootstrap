@@ -5,21 +5,21 @@
 
 <!-- Container para os links -->
 <div class="links-container">
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula1" target="_blank">Aula 1</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula2" target="_blank">Aula 2</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula3" target="_blank">Aula 3</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula4" target="_blank">Aula 4</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula5" target="_blank">Aula 5</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula6" target="_blank">Aula 6</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula7" target="_blank">Aula 7</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula8" target="_blank">Aula 8</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula9" target="_blank">Aula 9</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula10" target="_blank">Aula 10</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula11" target="_blank">Aula 11</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula12" target="_blank">Aula 12</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula13" target="_blank">Aula 13</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula14" target="_blank">Aula 14</a></h3>
-  <h3 class="link"><a href="https://phcastello.github.io/CursoBootstrap/Aula15" target="_blank">Aula 15</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula1" target="_blank">Aula 1</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula2" target="_blank">Aula 2</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula3" target="_blank">Aula 3</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula4" target="_blank">Aula 4</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula5" target="_blank">Aula 5</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula6" target="_blank">Aula 6</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula7" target="_blank">Aula 7</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula8" target="_blank">Aula 8</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula9" target="_blank">Aula 9</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula10" target="_blank">Aula 10</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula11" target="_blank">Aula 11</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula12" target="_blank">Aula 12</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula13" target="_blank">Aula 13</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula14" target="_blank">Aula 14</a></h3>
+  <h3><a href="https://phcastello.github.io/CursoBootstrap/Aula15" target="_blank">Aula 15</a></h3>
 </div>
 
 <h2>
@@ -37,19 +37,39 @@
   }
 
   .links-container h3 {
-    flex: 1 1 45%;
+    flex: 1 1 30%; /* Cada item ocupa aproximadamente 30% da largura */
     text-align: left;
-  }
-
-  h3.link{
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  
-  
-  @media (max-width: 600px) {
-    .links-container h3 {
-      flex: 1 1 100%;
-    }
+
+  /* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .links-container h3 {
+    flex: 1 1 45%; /* Em telas médias, duas colunas */
   }
+}
+
+@media (max-width: 480px) {
+  .links-container h3 {
+    flex: 1 1 100%; /* Em telas pequenas, cada link ocupa a linha inteira */
+  }
+}
+
+  .links-container h3 {
+   /* Alinhamento do texto */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .links-container h3 {
+    flex: 1 1 45%; /* Em telas médias, duas colunas */
+  }
+}
+
+@media (max-width: 480px) {
+  .links-container h3 {
+    flex: 1 1 100%; /* Em telas pequenas, cada link ocupa a linha inteira */
+  }
+}
 </style>
